@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographical Details</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="bootstrap.css">
+   <style>
+
+#f, #f1 ,#f2,#f3
+{
+   
+margin: 40px;
+margin-right: 50px;
+width: 60%;
+height: 100;
+float: top-right;
+border-style: solid;
+border-width: 2px;
+}
+
+#showDate #hideDate {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 30px;
+  margin: 20px auto;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+#showDate #hideDate button {
+  background-color: #c1cad1;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 3px 7px;
+  cursor: context-menu;
+}
+
+
+#id
+{
+    text-align: right;
+    padding-right: 600px;
+    justify-content: left;
+}
+.container
+{text-align: bottom;
+    padding-bottom: 20px;
+    justify-content: bottom;
+
+}
+
+#date {
+      display: none;
+    }
+    .tab{
+        width: 500px;
+        height: 300px;
+        border: solid;
+       
+    }
+    #tab,#td
+{
+font-size:20px;
+border:solid rgb(199, 191, 191);
+} 
+#tab
+{
+border-collapse:collapse; 
+/*to create space outside border*/
+margin : 50px;
+margin-left: 30px;
+margin-top: 2px;
+height: 300px;
+width: 100px;
+}
+.o1{
+text-align: center;
+
+}
+td
+{
+padding: 10px;
+
+}
+.ot
+{
+    padding-left: 25px;
+}
+.icon{
+    
+    transform: scale(1.5); 
+    border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+ }
+ 
+    </style>
+
+
+</head>
+<body>
+        <table><tr> </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><h5 id="id">Ketan Prajapati</h5></td>
+            </tr>
+           </table>
+       
+    
+
+    <h5 id="id">Person Id <input type="text"></h5>
+    
+   
+    
+    <fieldset id="f1" >
+        <table>
+        <strong>Biographic Information</strong>
+        <hr>
+
+     <table>
+        <tr><td>
+            <label>Effective Date</label></td>
+            <td><input type="date" class="form-control"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+            <td><button id="showDate">+</button>
+                <button id="hideDate">-</button>
+                <p id="date"><span id="currentDate"></span></p></td>
+             </tr>  
+
+             <tr><td>
+                <label>Formate Type</label></td>
+                <td><label >English</label></td>
+                 </tr>  
+
+        <tr><td>
+        <label>Dispaly Name</label></td>
+        <td><input type="text" class="form-control"></input></td>
+        <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
+            
+            <td></td><td><div class="container">
+                <button id="viewButton" class="form-control">
+                    <a href="push.html" target="_self">View Data
+                        
+                    </a>
+                  
+                </button></div></td>
+        </tr>  
+
+       
+        
+    </table>
+    </fieldset>
+
+    <fieldset id="f1" >
+        <table>
+        <strong>Biographic Information</strong>
+        <hr>
+
+     <table>
+        <tr><td>
+            <label>Country</label></td>
+            <td><select class="form-control">
+                <option></option>
+                <option>India</option>
+                <option>Others</option>
+            </select></td>
+             </tr>  
+
+             <tr><td>
+                <label>State</label></td>
+                <td><Select class="form-control">
+                    <option></option>
+                    <option>Andhra Pradesh</option>
+                    <option>Gujarat</option>
+                    <option>Telangana</option>
+                    <option>Others</option>
+                </Select></td>
+                 </tr>  
+
+        <tr><td>
+        <label>Date Of Birth</label></td>
+        <td><input type="date" class="form-control" required></input></td>
+        </tr>  
+
+        <tr><td>
+        <label>Birth Place</label></td>
+        <td><input type="text" class="form-control" required></input></td>
+        </tr>     
+
+        <tr><td>
+        <label>Native Place</label></td>
+        <td><input type="text" class="form-control" required></input></td>
+        </tr>      
+
+    </table>
+    </fieldset>
+
+    <fieldset id="f2">
+        <table>
+            <strong>Biographical History</strong>
+            <hr>
+
+           <table>
+           <tr><td>
+            <label>Effective Date</label></td>
+            <td><input type="date" class="form-control"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+            <td><button id="showDate">+</button>
+                <button id="hideDate">-</button>
+                <p id="date"><span id="currentDate"></span></p></td>
+                </tr>
+
+                <tr><td>
+                    <label>Gender</label></td>
+                  <td>  <select class="form-control">
+                        <option></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </td></tr>
+
+                <tr><td>
+                    <label>Highest Education Level</label></td>
+                    <td> <select class="form-control">
+                        <option></option>
+                        <option>ssc</option>
+                        <option>Intermediate</option>
+                        <option>Under Graduate</option>
+                        <option>Post Graduate</option>
+                    </select>
+                </td></tr>
+
+                <tr><td>
+                    <label>Marital Status</label></td>
+                    <td> <select class="form-control">
+                        <option></option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                    </select>
+                </td></tr>
+
+                <tr><td>
+                    <label>Alternate ID</label></td>
+                    <td> <input type="text" class="form-control">
+                </td></tr>
+                    <div class="container">
+                    <tr><td>
+                        <input type="radio" name="ans" ><label>Education gap</label>
+                        <br>
+                        <input type="radio" name="ans"><label>Carrer gap</label>
+                    </div>
+                    </td></tr>
+                 </table>
+                </fieldset>
+
+               <fieldset id="f3"> 
+                   
+                <strong>National ID</strong>
+                <hr>
+                <table id="tab">
+                  <tr>
+                  <td id="td" class="o1">Country</td>
+                  <td id="td" class="o1">National ID Type</td>
+                  <td id="td" class="o1">National ID</td>
+                  <td id="td" class="o1">Primary ID</td>
+                  <td id="td" class="o1"></td>
+                  </td>
+                  <td id="td" class="o1"></td>
+                  
+                  </tr>
+                  
+                  <tr id="tr1">
+                  <td id="td" ><select >
+                      <option value="select"></option>
+                      <option >India</option>
+                      <option value="">Others</option>
+                  </select></td>
+                  <td id="td" class="ot"><select >
+                      <option value=""></option>
+                      <option value="">Aadhaar Card</option>
+                      <option value="">Voter Card</option>
+                      <option value="">Permanent Account Number</option>
+                  </select></td>
+                  <td id="td" class="o1"><input type="text"></td>
+                  <td id="td"  class="icon"><input type="checkbox"></td>
+                  <td id="td"> <button class="plus">+</button> </td>
+                  <td id="td"><button class="minus">-</button></td>
+              
+                  </tr>
+                    
+                  <tr id="tr1">
+                  <td id="td"><select>
+                      <option value="select"></option>
+                      <option >India</option>
+                      <option value="">Others</option>
+                  </select></td>
+                  <td id="td" class="ot"><select >
+                      <option value=""></option>
+                      <option value="">Aadhaar Card</option>
+                      <option value="">Voter Card</option>
+                      <option value="">Permanent Account Number</option>
+                  </select></td>
+                  <td id="td" class="o1"><input type="text"></td>
+                  <td id="td"  class="icon"><input type="checkbox"></td>
+                  <td id="td"> <button class="plus">+</button> </td>
+                  <td id="td"><button class="minus">-</button></td>
+              
+                  </tr>
+              
+                  <tr id="tr1">
+                      <td id="td"><select>
+                          <option value="select"></option>
+                          <option >India</option>
+                          <option value="">Others</option>
+                      </select></td>
+                      <td id="td" class="ot"><select >
+                          <option value=""></option>
+                          <option value="">Aadhaar Card</option>
+                          <option value="">Voter Card</option>
+                          <option value="">Permanent Account Number</option>
+                      </select></td>
+                      <td id="td" class="o1"><input type="text"></td>
+                      <td id="td"  class="icon"><input type="checkbox"></td>
+                      <td id="td"> <button class="plus">+</button> </td>
+                      <td id="td"><button class="minus">-</button></td>
+                  
+                      </tr>
+                  
+                  </table>
+                </fieldset>
+    
+
+
+
+    </form>
+
+<script>
+         // JavaScript to display data when the button is clicked
+
+    document.getElementById('showDate').addEventListener('click', function() {
+      document.getElementById('date').style.display = 'block';
+      document.getElementById('currentDate').innerText = getCurrentDate();
+    });
+
+    document.getElementById('hideDate').addEventListener('click', function() {
+      document.getElementById('date').style.display = 'none';
+    });
+
+    function getCurrentDate() {
+      const today = new Date();
+      const options = {  getCurrentDate };
+      return today.toLocaleDateString(undefined, options);
+    }
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    

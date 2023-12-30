@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+#tab,td
+{
+font-size:25px;
+border:solid rgb(211, 211, 210) 2px;
+}
+table
+{
+border-collapse:collapse;
+/*to create space outside border*/
+margin: 10px;
+margin-left: 10px;
+margin-top: 0%;
+}
+.o1{
+text-align: center;
+
+}
+td
+{
+padding: 10px;
+
+}
+.ot
+{
+    padding-left: 30px;
+}
+#f1,#f2,#f3 ,#f4 
+{
+   
+margin: 40px;
+margin-right: 50px;
+width: 80%;
+height: 500;
+float: top-right;
+border-style: solid;
+border-width: 2px;
+}
+strong{
+    font-size: 30px;
+}
+hr{
+    border-color: black;
+}
+.icon{
+    
+    transform: scale(1.5); 
+    border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+ }
+ #tab2{
+    width: 99%;
+ }
+#tab3{
+ width: 99%;
+ }
+ #tab4{
+ width: 99%;
+ }
+ #d1{
+   text-align: center;
+
+ }
+    </style>
+
+
+</head>
+<body>
+    <fieldset id="f1">
+        <strong >Current Address</strong>
+                <hr>
+                <table id="tab">
+                  <tr>
+                  <td id="td" class="o1">Address Type</td>
+                  <td id="td" class="o1">As Of Date</td>
+                  <td id="td" class="o1">Status</td>
+                  <td id="td" class="o1">Address</td>
+                  <td id="td" class="o1"></td>
+                 
+                  <td id="td" class="o1"></td>
+                  </td>
+                  <td id="td" class="o1"></td>
+                  
+                  </tr>
+
+                  <tr>
+                    <td><Input type="text"></Input></td>
+                    <td><input type="date"></td>
+                    <td><input type="status"></td>
+                    <td><input type="text"></td>
+                    <td><a href="AddressHistory.html" target="_self">View Address Detail</a></td>
+                    <td id="td" class="o1"> <button class="plus" >+</button> </td>
+                  <td id="td" class="o1"><button class="minus">-</button></td>
+
+                  </tr>
+                  </table>
+    </fieldset>
+
+    <fieldset id="f2">
+        <strong >Phone Information</strong>
+                <hr>
+                <table id="tab2">
+                  <tr>
+                  <td id="td" class="o1">*Phone Type</td>
+                  <td id="td" class="o1">Telephone</td>
+                  <td id="td" class="o1">Extension</td>
+                  <td id="td" class="o1">Preferred
+                    
+                  </td>
+                  <td id="td" class="o1"></td>
+                    <td id="td" class="o1"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="d1"><select>
+                            <option value=""></option>
+                            <option value="">Home</option>
+                            <option value="">Work</option>
+                            <option value="">personal</option>
+                        </select></td>
+                        <td id="d1"><input type="text"></td>
+                        <td id="d1"><input type="text"></td>
+                        <td class="icon"><input type="checkbox"></td>
+                        <td id="td" class="o1"> <button class="plus">+</button> </td>
+                  <td id="td" class="o1"><button class="minus">-</button></td>
+
+                    </tr>
+    </table>
+    </fieldset>
+
+
+    <fieldset id="f3">
+        <strong>Email Addresses</strong>
+                <hr>
+                <table id="tab3" >
+                  <tr>
+                  <td id="td" class="o1">*Email Type</td>
+                  <td id="td" class="o1">*Email Address</td>
+                  
+                  <td id="td" class="o1">Preferred</td>
+                  <td id="td" class="o1"></td>
+                    <td id="td" class="o1"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="d1"><select>
+                            <option value=""></option>
+                            <option value="">Business</option>
+                            <option value="">Personal</option>
+
+                        </select>
+                        </td>
+
+                        <td id="d1"><Input type="text"></Input></td>
+                       <td class="icon"><input type="checkbox"></td>
+                       <td id="td" class="o1"> <button class="plus">+</button> </td>
+                       <td id="td" class="o1"><button class="minus">-</button></td>
+                    </tr>
+                    <tr>
+                        <td id="d1"><select>
+                            <option value=""></option>
+                            <option value="">Business</option>
+                            <option value="">Personal</option>
+
+                        </select>
+                        </td>
+
+                        <td id="d1"><Input type="text"></Input></td>
+                       <td class="icon"><input type="checkbox"></td>
+                       <td id="td" class="o1"> <button class="plus">+</button> </td>
+                       <td id="td" class="o1"><button class="minus">-</button></td>
+                    </tr>
+
+    </table>
+    </fieldset>
+ 
+    <fieldset id="f4">
+        <strong>Instant Message IDs</strong>
+                <hr>
+                <table id="tab4">
+                  <tr>
+                  <td id="td" class="o1">*IM Protocol</td>
+                  <td id="td" class="o1">*IM Domain</td>
+                  
+                  <td id="td" class="o1">*Network ID</td>
+                  <td id="td" class="o1">Preferred</td>
+                  <td id="td" class="o1"></td>
+                    <td id="td" class="o1"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td id="d1"><input type="text"></td>
+                        <td id="d1"><input type="text"></td>
+                        <td id="d1"><input type="text"></td>
+                        <td class="icon"><input type="checkbox"></td>
+                        <td id="td" class="o1"> <button class="plus">+</button> </td>
+                       <td id="td" class="o1"><button class="minus">-</button></td>
+                    </tr>
+    </table>
+    </fieldset>
+</body>
+</html>
